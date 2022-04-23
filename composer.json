@@ -29,6 +29,6 @@
   "autoload-dev": {
     "psr-4": { "Polygonscan\\Tests\\": "tests/Polygonscan/"}
   },
-  "minimum-stability": "master",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
