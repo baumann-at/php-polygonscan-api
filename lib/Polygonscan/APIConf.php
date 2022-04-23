@@ -1,20 +1,17 @@
 <?php
 
-namespace Etherscan;
+namespace Polygonscan;
 
 /**
  * Class APIConf
- * @package Etherscan
+ * @package Polygonscan
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class APIConf
 {
-    const API_URL = "https://api.etherscan.io/api";
-
-    const TESTNET_GOERLI = "api-goerli";
-    const TESTNET_ROPSTEN = "api-ropsten";
-    const TESTNET_KOVAN = "api-kovan";
-    const TESTNET_RINKEBY = "api-rinkeby";
+    const API_URL = "https://api.polygonscan.com/api";
+    
+    const TESTNET_MUMBAI = "api-testnet";
 
     const TAG_EARLIEST = "earliest";
     const TAG_LATEST = "latest";
@@ -53,7 +50,7 @@ class APIConf
         if (is_null($net)) {
             return self::API_URL;
         }
-
-        return "https://{$net}.etherscan.io/api";
+        
+        return "https://{$net}.polygonscan.com/api";
     }
 }

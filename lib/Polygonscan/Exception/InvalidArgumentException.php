@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Exception;
+namespace Polygonscan\Exception;
 
 /**
  * Class InvalidArgumentException
- * @package Etherscan\Exception
+ * @package Polygonscan\Exception
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface

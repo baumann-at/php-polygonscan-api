@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Class Websocket
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Websocket extends AbstractApi

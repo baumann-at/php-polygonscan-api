@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Exception;
+namespace Polygonscan\Exception;
 
 /**
  * Class ErrorException
- * @package Etherscan\Exception
+ * @package Polygonscan\Exception
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class ErrorException extends \ErrorException implements ExceptionInterface

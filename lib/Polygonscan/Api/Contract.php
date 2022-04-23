@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Class Contract
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Contract extends AbstractApi
@@ -17,7 +17,7 @@ class Contract extends AbstractApi
      * @param string $address Ether address.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getABI($address)
     {
@@ -35,7 +35,7 @@ class Contract extends AbstractApi
      * @param string $address Ether address.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      *
      * @deprecated deprecated since version 1.1.1
      */
@@ -51,7 +51,7 @@ class Contract extends AbstractApi
      * @param string $address Ether address.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getSourceCode($address)
     {
@@ -69,7 +69,7 @@ class Contract extends AbstractApi
      * @param string $guid Source Code GUID
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function checkVerifyStatus($guid)
     {
@@ -87,7 +87,7 @@ class Contract extends AbstractApi
      * @param string $guid GUID
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function checkProxyVerification($guid)
     {

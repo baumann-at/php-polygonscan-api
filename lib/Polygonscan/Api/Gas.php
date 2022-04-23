@@ -1,12 +1,12 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
-use Etherscan\APIConf;
+use Polygonscan\APIConf;
 
 /**
  * Class Gas
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Gas extends AbstractApi
@@ -19,7 +19,7 @@ class Gas extends AbstractApi
      * @param $gasPrice the price paid per unit of gas, in wei
      *
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function gasEstimate($gasPrice)
     {
@@ -37,7 +37,7 @@ class Gas extends AbstractApi
      * Returns the current Safe, Proposed and Fast gas prices.
      *
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function gasOracle()
     {
@@ -58,7 +58,7 @@ class Gas extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageGasLimit($startdate, $enddate, $sort = "asc")
     {
@@ -82,7 +82,7 @@ class Gas extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyTotalGasUsed($startdate, $enddate, $sort = "asc")
     {
@@ -106,7 +106,7 @@ class Gas extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageGasPrice($startdate, $enddate, $sort = "asc")
     {

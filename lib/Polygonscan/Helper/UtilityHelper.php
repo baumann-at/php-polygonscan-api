@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Helper;
+namespace Polygonscan\Helper;
 
 /**
  * Class UtilityHelper
- * @package Etherscan\Helper
+ * @package Polygonscan\Helper
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class UtilityHelper

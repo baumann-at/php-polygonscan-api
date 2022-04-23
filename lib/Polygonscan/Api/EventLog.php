@@ -1,12 +1,12 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
-use Etherscan\APIConf;
+use Polygonscan\APIConf;
 
 /**
  * Class EventLog
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class EventLog extends AbstractApi
@@ -20,7 +20,7 @@ class EventLog extends AbstractApi
      * @param int $startBlock
      * @param string $endBlock
      * @return mixed
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getLogs($address, $topic, $startBlock = 0, $endBlock = APIConf::TAG_LATEST)
     {

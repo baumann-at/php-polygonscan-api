@@ -1,19 +1,19 @@
 <?php
 
-namespace Etherscan\HttpClient;
+namespace Polygonscan\HttpClient;
 
-use Etherscan\APIConf;
-use Etherscan\Exception\ErrorException;
+use Polygonscan\APIConf;
+use Polygonscan\Exception\ErrorException;
 
 /**
  * Class Request
- * @package Etherscan\HttpClient
+ * @package Polygonscan\HttpClient
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Request implements HttpClientInterface {
 
     /**
-     * Etherscan API Key value.
+     * Polygonscan API Key value.
      *
      * @var string
      */
@@ -39,12 +39,12 @@ class Request implements HttpClientInterface {
     }
 
     /**
-     * Executes curl request to the Etherscan API.
+     * Executes curl request to the Polygonscan API.
      *
      * @param array $req Request parameters list.
      *
      * @return array JSON data.
-     * @throws ErrorException If Curl error or Etherscan API error occurred.
+     * @throws ErrorException If Curl error or Polygonscan API error occurred.
      */
     public function exec(array $req = []) {
         usleep(250000);
@@ -62,7 +62,7 @@ class Request implements HttpClientInterface {
             curl_setopt(
                 self::$ch,
                 CURLOPT_USERAGENT,
-                'Mozilla/4.0 (compatible; Etherscan PHP API; ' . php_uname('a') . '; PHP/' . phpversion() . ')'
+                'Mozilla/4.0 (compatible; Polygonscan PHP API; ' . php_uname('a') . '; PHP/' . phpversion() . ')'
             );
         }
         curl_setopt(self::$ch, CURLOPT_URL, APIConf::getAPIUrl($this->net));
@@ -77,16 +77,16 @@ class Request implements HttpClientInterface {
 
         $json = json_decode($res, true);
 
-        // Check for the Etherscan API error
+        // Check for the Polygonscan API error
         if (isset($json['error'])) {
-            throw new ErrorException("Etherscan API error: {$json['error']}");
+            throw new ErrorException("Polygonscan API error: {$json['error']}");
         }
 
         return $json;
     }
 
     /**
-     * Executes simple GET request to the Etherscan public API.
+     * Executes simple GET request to the Polygonscan public API.
      *
      * @param string $url API method URL.
      *

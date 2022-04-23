@@ -1,14 +1,14 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
-use Etherscan\APIConf;
-use Etherscan\Exception\ErrorException;
-use Etherscan\Exception\InvalidArgumentException;
+use Polygonscan\APIConf;
+use Polygonscan\Exception\ErrorException;
+use Polygonscan\Exception\InvalidArgumentException;
 
 /**
  * Class Stats
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Stats extends AbstractApi
@@ -18,7 +18,7 @@ class Stats extends AbstractApi
      * Returns the current amount of Ether in circulation.
      *
      * @return array Result returned in Wei, to get value in Ether divide resultAbove / 1000000000000000000
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function ethSupply()
     {
@@ -32,7 +32,7 @@ class Stats extends AbstractApi
      * Returns the current amount of Ether in circulation, ETH2 Staking rewards and EIP1559 burnt fees statistics.
      *
      * @return array Result returned in Wei, to get value in Ether divide resultAbove / 1000000000000000000
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function eth2Supply()
     {
@@ -47,7 +47,7 @@ class Stats extends AbstractApi
      * Returns the latest price of 1 ETH.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function ethPrice()
     {
@@ -68,8 +68,8 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
-     * @throws \Etherscan\Exception\InvalidArgumentException
+     * @throws \Polygonscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\InvalidArgumentException
      */
     public function getNodesSize($startdate, $enddate, $clienttype, $syncmode, $sort = "asc")
     {
@@ -97,7 +97,7 @@ class Stats extends AbstractApi
      * Returns the total number of discoverable Ethereum nodes.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getNodesCount()
     {
@@ -116,7 +116,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyTransactionFee($startdate, $enddate, $sort = "asc")
     {
@@ -138,7 +138,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyNewAddressCount($startdate, $enddate, $sort = "asc")
     {
@@ -160,7 +160,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyNetworkUtilization($startdate, $enddate, $sort = "asc")
     {
@@ -182,7 +182,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageHashRate($startdate, $enddate, $sort = "asc")
     {
@@ -204,7 +204,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyTransactionCount($startdate, $enddate, $sort = "asc")
     {
@@ -226,7 +226,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageNetworkDifficulty($startdate, $enddate, $sort = "asc")
     {
@@ -248,7 +248,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyMarketCap($startdate, $enddate, $sort = "asc")
     {
@@ -270,7 +270,7 @@ class Stats extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getHistoricalPrice($startdate, $enddate, $sort = "asc")
     {
@@ -294,7 +294,7 @@ class Stats extends AbstractApi
      * @param string $tokenIdentifier Token name from the list or contract address.
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function tokenSupply($tokenIdentifier)
     {

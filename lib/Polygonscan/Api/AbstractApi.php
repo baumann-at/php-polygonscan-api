@@ -1,13 +1,13 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
-use Etherscan\Client;
-use Etherscan\HttpClient\Request;
+use Polygonscan\Client;
+use Polygonscan\HttpClient\Request;
 
 /**
  * Class AbstractApi
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 abstract class AbstractApi implements ApiInterface

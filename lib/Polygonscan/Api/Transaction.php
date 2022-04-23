@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Class Transaction
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Transaction extends AbstractApi
@@ -17,7 +17,7 @@ class Transaction extends AbstractApi
      * @param string $transactionHash
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getStatus($transactionHash) {
         return $this->request->exec([
@@ -34,7 +34,7 @@ class Transaction extends AbstractApi
      * @param string $transactionHash
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTransactionReceiptStatus($transactionHash) {
         return $this->request->exec([
@@ -51,7 +51,7 @@ class Transaction extends AbstractApi
      * @param string $transactionHash
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getContractExecutionStatus($transactionHash) {
         return $this->getStatus($transactionHash);

@@ -1,13 +1,13 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
-use Etherscan\APIConf;
-use Etherscan\Exception\ErrorException;
+use Polygonscan\APIConf;
+use Polygonscan\Exception\ErrorException;
 
 /**
  * Class Proxy
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Proxy extends AbstractApi

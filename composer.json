@@ -1,19 +1,19 @@
 {
-  "name": "maslakoff/php-etherscan-api",
+  "name": "baumann-at/php-polygonscan-api",
   "type": "library",
-  "description": "PHP client for the Etherscan API",
-  "homepage": "https://github.com/maslakoff/php-etherscan-api",
-  "keywords": ["etherscan", "ethereum", "api", "EtherScan.io"],
+  "description": "PHP client for the Polygonscan API",
+  "homepage": "https://github.com/baumann-at/php-polygonscan-api",
+  "keywords": ["Polygonscan", "polygon", "api", "Polygonscan.com"],
   "license": "MIT",
   "authors": [
     {
-      "name": "Maslakou Ihar",
-      "email": "igormaslakoff@gmail.com",
-      "homepage": "https://github.com/maslakoff"
+      "name": "Chris Baumann",
+      "email": "c.baumann@baumann.at",
+      "homepage": "https://github.com/baumann-at"
     }
   ],
   "support": {
-    "email": "igormaslakoff@gmail.com"
+    "email": "c.baumann@baumann.at"
   },
   "require": {
     "php": "^5.6 || ^7.0 || ^8.0"
@@ -24,10 +24,10 @@
     "guzzlehttp/guzzle": "~5.0"
   },
   "autoload": {
-    "psr-4": { "Etherscan\\": "lib/Etherscan/" }
+    "psr-4": { "Polygonscan\\": "lib/Polygonscan/" }
   },
   "autoload-dev": {
-    "psr-4": { "Etherscan\\Tests\\": "tests/Etherscan/"}
+    "psr-4": { "Polygonscan\\Tests\\": "tests/Polygonscan/"}
   },
   "minimum-stability": "dev",
   "prefer-stable": true

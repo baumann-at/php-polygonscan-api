@@ -7,13 +7,13 @@
         stopOnFailure="false"
         bootstrap="tests/bootstrap.php">
     <testsuites>
-        <testsuite name="Etherscan PHP API Test Suite">
-            <directory>./tests/Etherscan</directory>
+        <testsuite name="Polygonscan PHP API Test Suite">
+            <directory>./tests/Polygonscan</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist>
-            <directory suffix=".php">./lib/Etherscan</directory>
+            <directory suffix=".php">./lib/Polygonscan</directory>
         </whitelist>
     </filter>
     <listeners>

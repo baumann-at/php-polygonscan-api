@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\HttpClient;
+namespace Polygonscan\HttpClient;
 
 /**
  * Interface HttpClientInterface
- * @package Etherscan\HttpClient
+ * @package Polygonscan\HttpClient
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 interface HttpClientInterface

@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Interface ApiInterface
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 interface ApiInterface

@@ -1,15 +1,15 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 
-use Etherscan\APIConf;
-use Etherscan\Exception\ErrorException;
-use Etherscan\Exception\InvalidArgumentException;
+use Polygonscan\APIConf;
+use Polygonscan\Exception\ErrorException;
+use Polygonscan\Exception\InvalidArgumentException;
 
 /**
  * Class Account
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Account extends AbstractApi
@@ -359,7 +359,7 @@ class Account extends AbstractApi
      * @param string $blockNumber the integer block number to check balance for eg. 12697906​
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getBalanceHistory($address, $blockNumber) {
         return $this->request->exec([

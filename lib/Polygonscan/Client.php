@@ -1,22 +1,22 @@
 <?php
 
-namespace Etherscan;
+namespace Polygonscan;
 
-use Etherscan\Api\ApiInterface;
-use Etherscan\Exception\InvalidArgumentException;
+use Polygonscan\Api\ApiInterface;
+use Polygonscan\Exception\InvalidArgumentException;
 
 /**
- * Simple PHP Etherscan client.
+ * Simple PHP Polygonscan client.
  *
  * Class Client
- * @package Etherscan
+ * @package Polygonscan
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Client
 {
 
     /**
-     * Etherscan API key token.
+     * Polygonscan API key token.
      *
      * @var string
      */

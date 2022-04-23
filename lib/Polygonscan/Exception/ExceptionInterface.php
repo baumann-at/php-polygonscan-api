@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Exception;
+namespace Polygonscan\Exception;
 
 /**
  * Interface ExceptionInterface
- * @package Etherscan\Exception
+ * @package Polygonscan\Exception
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 interface ExceptionInterface

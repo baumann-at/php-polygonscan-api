@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Class Block
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  */
 class Block extends AbstractApi
 {
@@ -14,7 +14,7 @@ class Block extends AbstractApi
      * @param int $blockNumber block number to check block rewards
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getBlockReward($blockNumber)
     {
@@ -31,7 +31,7 @@ class Block extends AbstractApi
      * @param int $blockNumber block number to estimate time remaining to be mined
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getBlockCountdown($blockNumber)
     {
@@ -49,7 +49,7 @@ class Block extends AbstractApi
      * @param string $closest the closest available block to the provided timestamp
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getBlockNumberByTimestamp($timestamp, $closest)
     {
@@ -69,7 +69,7 @@ class Block extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageBlockSize($startdate, $enddate, $sort = "asc")
     {
@@ -90,7 +90,7 @@ class Block extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyBlockCountAndRewards($startdate, $enddate, $sort = "asc")
     {
@@ -111,7 +111,7 @@ class Block extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyBlockRewards($startdate, $enddate, $sort = "asc")
     {
@@ -132,7 +132,7 @@ class Block extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyAverageBlockTime($startdate, $enddate, $sort = "asc")
     {
@@ -153,7 +153,7 @@ class Block extends AbstractApi
      * @param string $sort 'asc' or 'desc'
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getDailyUncleBlockCountAndRewards($startdate, $enddate, $sort = "asc")
     {

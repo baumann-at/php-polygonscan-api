@@ -1,10 +1,10 @@
 <?php
 
-namespace Etherscan\Api;
+namespace Polygonscan\Api;
 
 /**
  * Class Token
- * @package Etherscan\Api
+ * @package Polygonscan\Api
  * @author Maslakou Ihar <igormaslakoff@gmail.com>
  */
 class Token extends AbstractApi
@@ -16,7 +16,7 @@ class Token extends AbstractApi
      * @param string $contractAddress the contract address of the ERC-20 token
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTokenSupply($contractAddress)
     {
@@ -35,7 +35,7 @@ class Token extends AbstractApi
      * @param string $address the string representing the address to check for token balance
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTokenBalance($contractAddress, $address)
     {
@@ -55,7 +55,7 @@ class Token extends AbstractApi
      * @param string $blockNumber the integer block number to check total supply for eg. 12697906
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTokenSupplyHistory($contractAddress, $blockNumber)
     {
@@ -76,7 +76,7 @@ class Token extends AbstractApi
      * @param string $blockNumber the integer block number to check total supply for eg. 12697906
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTokenBalanceHistory($contractAddress, $address, $blockNumber)
     {
@@ -96,7 +96,7 @@ class Token extends AbstractApi
      * @param string $contractAddress the contract address of the ERC-20/ERC-721 token to retrieve token info
      *
      * @return array
-     * @throws \Etherscan\Exception\ErrorException
+     * @throws \Polygonscan\Exception\ErrorException
      */
     public function getTokenInfo($contractAddress)
     {
