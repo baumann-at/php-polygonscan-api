@@ -1,6 +1,6 @@
 # Polygonscan PHP API
 
-PHP wrapper for the Polygonscan API - forked from https://github.com/maslakoff/php-Polygonscan-api
+PHP wrapper for the Polygonscan API - forked from https://github.com/maslakoff/php-etherscan-api
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,7 +17,7 @@ The minimum requirement by Polygonscan API is that your Web server supports PHP 
 To install Polygonscan PHP API package you can run command:
 
 ```
-composer require baumann-at/php-Polygonscan-api:dev-master
+composer require baumann-at/php-polygonscan-api:dev-master
 ```
 
 ## Usage
